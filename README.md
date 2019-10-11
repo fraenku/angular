@@ -8,12 +8,28 @@ See ng --help for more info
 <h2>Big Picture</h2>
 Typescript, super-set of Javascript, is used.
 
-- Components: UI-Code consisting of HTML-template and Code
+- Components: UI-Code consisting of HTML-template and Code, like Lego-Block
 - Service: Reusable Code
 - Modules: Organize Code
 
+<img src=angular-elements.png"/>
 
+<h2>Components</h2>
+Consist of imports
+<code>import {Component} from '@angular/core'</code>
 
+Decorators
+@Component({
+ selector: 'app-customer',
+ templateUrl: '../customers.component.html'
+ }}
+
+Class
+export class CustomerComponent {
+}
+
+<h2>Module</h2>
+Every app has a least a model, like a container for legos
 
 <h2>Best practices</h2>
 - Add lint
