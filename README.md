@@ -16,9 +16,12 @@ Typescript, super-set of Javascript, is used.
 
 <h2>Components</h2>
 Consist of imports
-<code>import {Component} from '@angular/core'</code>
+```javascript
+import {Component} from '@angular/core'</code>
+```
 
 Decorators
+```javascript
 @Component({
  selector: 'app-customer',
  templateUrl: '../customers.component.html'
@@ -27,19 +30,22 @@ Decorators
 Class
 export class CustomerComponent {
 }
+ ```
 
 <h2>Module</h2>
 Every app has a least a model, like a container for legos
 
 <h2>Property and Event Binding</h2>
-<code>
+ ```javascript
 <h1 [hidden]="!isVisible">{{title}}</h1>
 <button (click)="changeVisibility()">
-</code>
-{{}}: Interpolation
-[]: Property binding
-(): Event binding
-<tr *ngFor="let cust of filteredCustomers": Directive
+ ```
+Interpolation, Property binding, Event binding, Directive
+
+ ```{{}} ```: Interpolation
+ ```[] ```: Property binding
+ ```(): ``` Event binding
+ ```<tr *ngFor="let cust of filteredCustomers" ```: Directive
 
 <h2>Best practices</h2>
 - Add lint
