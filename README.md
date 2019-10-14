@@ -36,15 +36,12 @@ export class CustomerComponent {
 Every app has a least a model, like a container for legos
 
 <h2>Property and Event Binding</h2>
- ```javascript
+ 
+ ```html
 <h1 [hidden]="!isVisible">{{title}}</h1>
 <button (click)="changeVisibility()">
  ```
-Interpolation, Property binding, Event binding, Directive
 
- ```{{}} ```: Interpolation
- ```[] ```: Property binding
- ```(): ``` Event binding
  ```<tr *ngFor="let cust of filteredCustomers" ```: Directive
 
 <h2>Best practices</h2>
